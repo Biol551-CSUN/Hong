@@ -11,7 +11,7 @@ ggplot(data=penguins,
                      color=species,
                      shape = species, #adds shape of data points
                      size = body_mass_g,
-                     alpha=flipper_length_mm #transparency level baed on flipper length
+                     alpha=flipper_length_mm #transparency level based on flipper length
                      )) +
   #below visualizes the points so names different from data frame
   geom_point(size=3, alpha=0.5)+ #enter setting inside brackets 
