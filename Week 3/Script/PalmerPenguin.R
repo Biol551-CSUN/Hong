@@ -23,3 +23,4 @@ ggplot(data=penguins,
   scale_color_viridis_d()+ #changes for color blindness
   facet_wrap(~species, ncol = 2) #only want the first 2 columns
 #facet_grid(species~sex) #faceting bisects species vs sex
+#new line from desktop
