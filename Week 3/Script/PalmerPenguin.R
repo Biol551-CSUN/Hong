@@ -4,6 +4,7 @@
 #### Week 3 BIOL551 lab
 library(tidyverse)
 library(palmerpenguins)
+library(here)
 glimpse(penguins)
 ggplot(data=penguins,
        mapping = aes(x = bill_depth_mm, #aesthetics is NOT the actual legend
