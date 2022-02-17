@@ -12,7 +12,7 @@ ggplot(data=penguins,
                      color=species,
                      shape = species, #adds shape of data points
                      size = body_mass_g,
-                     alpha=flipper_length_mm #transparency level baed on flipper length
+                     alpha=flipper_length_mm #transparency level based on flipper length
                      )) +
   #below visualizes the points so names different from data frame
   geom_point(size=3, alpha=0.5)+ #enter setting inside brackets 
@@ -24,3 +24,4 @@ ggplot(data=penguins,
   scale_color_viridis_d()+ #changes for color blindness
   facet_wrap(~species, ncol = 2) #only want the first 2 columns
 #facet_grid(species~sex) #faceting bisects species vs sex
+#new line from desktop
