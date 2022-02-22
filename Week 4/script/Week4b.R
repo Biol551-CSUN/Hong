@@ -29,7 +29,7 @@ ChemData_long <-ChemData_clean %>%
                names_to = "Variables", # the names of the new cols with all the column names
                values_to = "Values") # names of the new column with all the val
 View(ChemData_long)
-
+# another way to summarize data#
 ChemData_long %>%
   group_by(Variables, Site, Zone, Tide_time) %>% # group by everything we want- Site, Zone, Tide_time
   summarise(Param_means = mean(Values, na.rm = TRUE), # get mean
