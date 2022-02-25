@@ -34,5 +34,5 @@ round_date(datetimes, "5 mins") # round to nearest 5 minute
 ###This is temperature and salinity data taken at a site with groundwater###
 CondData<-read_csv(here("Week_5","data", "CondData.csv"))%>%
   mutate(datetime = mdy_hms(depth)) %>% #changes column
-drop_na()
+drop_na()#removes NA field but not sure if this was necessary
 view(CondData)
